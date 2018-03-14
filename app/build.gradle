@@ -63,6 +63,12 @@ android {
         androidTest.java.srcDirs += 'src/androidTest/kotlin'
     }
 
+    testOptions {
+        unitTests {
+            includeAndroidResources = true
+        }
+    }
+
     dataBinding {
         enabled = true
     }
@@ -102,6 +108,10 @@ dependencies {
     testImplementation unitTestDependencies.kotlin
     testImplementation unitTestDependencies.kotlinTest
     testImplementation unitTestDependencies.robolectric
+    testImplementation unitTestDependencies.robolectricShadowV4
+    testImplementation unitTestDependencies.robolectricShadowMultidex
+    testImplementation unitTestDependencies.robolectricShadowPlayServices
+    testImplementation unitTestDependencies.robolectricShadowHttpclient
     testImplementation unitTestDependencies.junit
     testImplementation unitTestDependencies.mockito
     testImplementation unitTestDependencies.kluent

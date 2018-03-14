@@ -51,12 +51,16 @@ ext {
     ]
 
     unitTesting = [
-            kotlin     : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
-            kotlinTest : "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version",
-            robolectric: "org.robolectric:robolectric:$robolectric_version",
-            junit      : "junit:junit:$junit_version",
-            mockito    : "com.nhaarman:mockito-kotlin:$mockito_version",
-            kluent     : "org.amshove.kluent:kluent:$kluent_version",
+            kotlin                       : "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version",
+            kotlinTest                   : "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version",
+            robolectric                  : "org.robolectric:robolectric:$robolectric_version",
+            robolectricShadowV4          : "org.robolectric:shadows-supportv4:$robolectric_version",
+            robolectricShadowMultidex    : "org.robolectric:shadows-multidex:$robolectric_version",
+            robolectricShadowPlayServices: "org.robolectric:shadows-playservices:$robolectric_version",
+            robolectricShadowHttpclient  : "org.robolectric:shadows-httpclient:$robolectric_version",
+            junit                        : "junit:junit:$junit_version",
+            mockito                      : "com.nhaarman:mockito-kotlin:$mockito_version",
+            kluent                       : "org.amshove.kluent:kluent:$kluent_version",
     ]
 
     acceptanceTesting = [
